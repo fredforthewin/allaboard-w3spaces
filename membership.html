@@ -1,0 +1,162 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&family=Rosario:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./scripts.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <!-- Your HTML content goes here -->
+      <header>
+        <div class="navigation">
+          <div class="logo">
+            <img src="./img/project1/aao_wordmark_simple.png" />
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+
+          <div id="myLinks" class="menu-links">
+            <div><a href="index.html">home</a></div>
+            <div><a href="about.html">about</a></div>
+            <div><a href="membership.html">membership</a></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="hero">
+        <div class="hero-image-container">
+          <div class="hero-text">
+            <h1><span>membership</span></h1>
+            <img
+              src="./img/project1/aao_membership_hero.png"
+              alt="Scan Ticket"
+            />
+          </div>
+        </div>
+      </div>
+
+      <button class="membership-accordion"><h2>on-track</h2></button>
+      <div class="panel">
+        <p>
+          Join our movement with the affordable On-Track membership, specially
+          designed for students, veterans, and those with disabilities. Your
+          support helps us lay the foundation for better public train
+          infrastructure. Your $25 per month ensures that we're on the right
+          track towards a more accessible and efficient transportation system
+          for everyone.
+        </p>
+        <p class="price">$25 / month</p>
+        <button class="cta-button">Join Now</button>
+      </div>
+
+      <button class="membership-accordion"><h2>on-board</h2></button>
+      <div class="panel">
+        <p>
+          Become an On-Board member and enjoy a premium level of support for
+          just $35 per month. Your commitment keeps the momentum going, helping
+          us enhance train infrastructure, make it more sustainable, and boost
+          ridership. Ride with us and be part of the journey towards a greener
+          and more efficient future.
+        </p>
+        <p class="price">$35 / month</p>
+        <button class="cta-button">Join Now</button>
+      </div>
+
+      <button class="membership-accordion"><h2>first class</h2></button>
+      <div class="panel">
+        <p>
+          Upgrade your support to First Class and help us reach new destinations
+          in public train infrastructure. For $50 per month, you'll be at the
+          forefront of our mission, accelerating the growth of sustainable and
+          accessible transportation. With your generous contribution, we can
+          pave the way to a brighter future for train travel.
+        </p>
+        <p class="price">$50 / month</p>
+        <button class="cta-button">Join Now</button>
+      </div>
+
+      <button class="membership-accordion"><h2>club car</h2></button>
+      <div class="panel">
+        <p>
+          The Club Car membership is for those who want to be at the heart of
+          the transformation. At $100 per month, you are an essential driving
+          force behind our advocacy efforts. Your support enables us to
+          spearhead groundbreaking projects, pushing the boundaries of public
+          train infrastructure and usage. Join the Club Car level and be a
+          leader in the journey towards a better tomorrow.
+        </p>
+        <p class="price">$100 / month</p>
+        <button class="cta-button">Join Now</button>
+      </div>
+
+      <script>
+        var acc = document.getElementsByClassName("membership-accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+      </script>
+
+      <!-- NEWSLETTER, AGAIN -->
+      <div class="newsletter">
+        <h2>Join our newsletter</h2>
+        <div class="text-entry-container">
+          <label for="text-entry">Email</label>
+          <input type="text" id="email2" name="text-entry" />
+        </div>
+        <button class="cta-button">Sign Up</button>
+      </div>
+
+      <div class="content-gap"></div>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-content">
+          <img src="needs to be made" alt="Wordmark" />
+          <p>
+            All Aboard Ohio is a 501-C3 non-profit, member-based organization
+            dedicated to promoting more and better intercity passenger rail
+            service and public transit throughout the state.
+          </p>
+          <div class="address-box">
+            <p>PO Box 891</p>
+            <p>Maineville, Ohio 45039</p>
+            <p>(614) 401-4589</p>
+          </div>
+          <div class="footer-social">
+            <img src="./icons/logo-facebook.svg" alt="facebook" />
+            <img src="./icons/logo-instagram.svg" alt="instagram" />
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
