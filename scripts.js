@@ -4,7 +4,8 @@ function myFunction() {
     x.style.display = "none";
   } else {
     x.style.display = "flex";
-    x.style.flexDirection = "column";
+    x.style.flexDirection = "row";
+    x.style.flexWrap = "wrap";
   }
 }
 
@@ -15,4 +16,5 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
+
 
