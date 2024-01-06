@@ -188,7 +188,7 @@ a[href^="mailto:"] {
   justify-content: space-between;
   align-items: left;
   padding: 8px 8px;
-  
+
   border: solid var(--on-background-color);
 }
 
@@ -389,6 +389,10 @@ input {
 }
 
 /* ABOUT */
+
+.about-hero {
+  margin-bottom: 60px;
+}
 
 .about-leadership {
   padding-top: 40px;
